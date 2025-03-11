@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(9, 9, 11);
+}
+
+/* ------------------------------ NAVBAR ------------------------------ */
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.navbar {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(24, 24, 27);
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 1px 0 rgb(48, 48, 50);
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    transform: translateX(-40px);
+}
+
+.logo img {
+    width: 128px;
+    height: auto;
+    margin-top: 18px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin-top: 18px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 550;
+    font-size: 14.5px;
+    transition: color 0.3s;
+}
+
+.nav-links li a.active,
+.nav-links li a:hover {
+    color:  rgb(100,57,238);
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-bar {
+    width: 350px;
+    padding: 11px 15px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background-color: #27272a;
+    color: white;
+    margin-top: 18px;
+}
+
+.search-bar::placeholder {
+    color: #969f9e;
+}
+
+.download img {
+    width: 30px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.profil {
+    margin-right: 20px;
+    right: 20px;
+    top: 15px;
+    z-index: 1000;
+    margin-left: 1260px;
+    margin-top: 15px;
+}
+
+.profil img {
+    width: 40px;
+    height: auto;
+}
+
+/* ------------------------------ BAGIAN IKLAN ------------------------------ */
+.ads-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto); 
+    gap: 5px; 
+    padding: 10px 50px;
+    margin-top: 120px; 
+    justify-content: center;
+}
+
+.ad-card {
+    width: 640px;
+    height: 85px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.ad-card span {
+    display: block;
+    margin-bottom: 5px;
+}
+
